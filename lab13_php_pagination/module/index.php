@@ -1,14 +1,3 @@
-# Lab13Web
-|  |  |  |
-|-----|------|-----|
-|Nama|Sandy Ramadhan|
-|NIM|312210633|
-|Kelas|TI.22.A.4|
-|Mata Kuliah|Pemograman Web|
-|  |  |  |
-
-
-```php
 <?php
 // Include your database connection and other necessary files
 
@@ -121,13 +110,3 @@ $result = mysqli_query($conn, $sql);
 // Include your footer file
 require("../template/footer.php");
 ?>
-```
-
-Bagian kode ini melakukan hal berikut:
-
-Memeriksa apakah formulir pencarian telah dikirimkan ( isset($_GET["submit'])) dan apakah permintaan pencarian tidak kosong ( !empty($_GET['q'])).
-Jika ada permintaan pencarian, ia membuat klausa SQL WHERE untuk memfilter hasil berdasarkan permintaan pencarian. Pencarian dilakukan pada kolom "nama", "nim", dan "alamat" menggunakan operator LIKE.
-Query SQL utama untuk memilih data dari tabel "mahasiswa" kemudian dimodifikasi untuk menyertakan klausa WHERE untuk pencarian.
-Kode lainnya, termasuk penomoran halaman dan tampilan data, memperhitungkan parameter pencarian.
-
-![Screenshot 2023-12-31 192546](https://github.com/SandyRamadhan28/Lab13Web/assets/115614173/950d683b-1cd4-4e5e-b07d-a6cabe87690b)
